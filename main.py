@@ -3,6 +3,7 @@ from departamento import Departamento
 from proveedor import Proveedor
 from cliente import Cliente
 from trabajador import Trabajador
+from tarjeta import Tarjeta
 
 def main():
     """
@@ -24,7 +25,12 @@ def main():
     proveedor_cemento.printDataPersona()
     cliente = Cliente("CL01","Omar","Flores","6-666-66","922-222","omar.flores@hotmail.com")
     cliente.printDataPersona()
-
+    pago = Tarjeta("MP01","12-12-3344-320","234","23/02")
+    print(pago.Numero_Frontal)
+    pago.Numero_Frontal = "13-13-1313-133"
+    print(pago.Numero_Frontal)
+    del pago.Numero_Frontal
+    #print(pago.Numero_Frontal) #Aqui se puede hacer un manejo de error. <AttributeError> ya que el atributo y su campo fue eliminado
 
     
 if __name__ == "__main__":
