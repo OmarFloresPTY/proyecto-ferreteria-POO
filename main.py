@@ -38,7 +38,7 @@ def main():
     #suministra.PrintData()
     trabajador = Trabajador("TR01","Luis","Ocaña","6-777-7777","888-888","luis.ocana@grupomiguel.com")
     compra = Compras("COM01",2,"22/03/2023",producto,cliente,pago,trabajador)
-    compra.PrinData()
+    #compra.PrinData()
     
 if __name__ == "__main__":
     main()
