@@ -20,16 +20,16 @@ def main():
         departamento = construccion
     )
     producto.descripcion = "Cemento utilizado para la construcción en general"
-    producto.PrintData()
+    #producto.PrintData()
     proveedor_cemento = Proveedor("PRO01","Juan","Herrera","9-999-99","999-999","juantio@gmail.com")
-    proveedor_cemento.printData()
+    #proveedor_cemento.printData()
     cliente = Cliente("CL01","Omar","Flores","6-666-66","922-222","omar.flores@hotmail.com")
-    cliente.printData()
-    pago = Tarjeta("MP01","12-12-3344-320","234","23/02")
-    print(pago.Numero_Frontal)
-    pago.Numero_Frontal = "13-13-1313-133"
-    print(pago.Numero_Frontal)
-    del pago.Numero_Frontal
+    #cliente.printData()
+    pago = Tarjeta("MPT01","12-12-3344-320","234","23/02")
+    #print(pago.Numero_Frontal)
+    #pago.Numero_Frontal = "13-13-1313-133"
+    #print(pago.Numero_Frontal)
+    #del pago.Numero_Frontal
     #print(pago.Numero_Frontal) #Aqui se puede hacer un manejo de error. <AttributeError> ya que el atributo y su campo fue eliminado
     suministra = Suministar("SPP01",producto,proveedor_cemento)
     suministra.PrintData()
