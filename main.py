@@ -5,6 +5,9 @@ from cliente import Cliente
 from trabajador import Trabajador
 from tarjeta import Tarjeta
 from suministar import Suministar
+from compras import Compras
+from trabajador import Trabajador
+
 def main():
     """
         En esta función se crean algunos objetos y se realizan operaciones
@@ -32,7 +35,10 @@ def main():
     #del pago.Numero_Frontal
     #print(pago.Numero_Frontal) #Aqui se puede hacer un manejo de error. <AttributeError> ya que el atributo y su campo fue eliminado
     suministra = Suministar("SPP01",producto,proveedor_cemento)
-    suministra.PrintData()
+    #suministra.PrintData()
+    trabajador = Trabajador("TR01","Luis","Ocaña","6-777-7777","888-888","luis.ocana@grupomiguel.com")
+    compra = Compras("COM01",2,"22/03/2023",producto,cliente,pago,trabajador)
+    compra.PrinData()
     
 if __name__ == "__main__":
     main()

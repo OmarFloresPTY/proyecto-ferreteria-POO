@@ -6,6 +6,7 @@ class Tarjeta(Metodo_de_Pago):
         self.__numero_frontal = numero_frontal
         self.__cvv = cvv
         self.__fecha_vencimiento = fecha_vencimiento
+        self.descripcion = "Tarjeta de Credito"
 
     @property
     def Numero_Frontal(self):
