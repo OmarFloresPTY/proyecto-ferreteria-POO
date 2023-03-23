@@ -3,7 +3,7 @@ class Proveedor(Persona):
     def __init__(self, id, nombre, apellido, cedula, telefono, correo) -> None:
         super().__init__(id, nombre, apellido, cedula, telefono, correo)
     
-    def printDataPersona(self):
+    def printData(self):
         print("Tabla de datos <PROVEEDOR>")
         print(f'Información Personal: ')
         print(f'Nombre: {self.nombre}')

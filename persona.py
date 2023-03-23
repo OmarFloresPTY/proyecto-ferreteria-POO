@@ -10,5 +10,5 @@ class Persona(ABC):
         self.correo = correo
     
     @abstractmethod
-    def printDataPersona(self):
+    def printData(self):
         pass

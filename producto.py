@@ -11,7 +11,7 @@ class Producto(Departamento):
         self.departamento = departamento
         self.descripcion = str
     
-    def PrintDataProducto(self):
+    def PrintData(self):
         print("IMPRESION DE DATOS DEL PRODUCTO")
         print("---------------------------------")
         print(f'id = {self.id} --> nombre producto = {self.nombre_producto} --> precio = {self.precio_producto}')
